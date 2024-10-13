@@ -1,0 +1,42 @@
+div {
+  margin: 20px;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+nav {
+  background-color: rgb(250, 210, 158);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  /* justify-content: space-between; to sieded one div to one corner and one div into another side*/
+}
+li {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.mobile {
+  display: none;
+}
+.mobile-tabs {
+  display: none;
+}
+.toggle {
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  .mobile {
+    display: block;
+  }
+  .nav-tabs {
+    display: none;
+  }
+}
